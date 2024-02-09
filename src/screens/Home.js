@@ -3,16 +3,19 @@ import Header from '../components/Header'
 import Categories from '../components/Categories'
 
 
-const Home = () => {
+
+const Home = ({selectedCategoryState}) => {
 
   return (
     <View>
-       <Header/>
-       <Categories/>
+       <Header title='BeastMode'/>
+       <Categories selectedCategoryState={selectedCategoryState}  />
     </View>
   )
 }
 
 export default Home
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+})
