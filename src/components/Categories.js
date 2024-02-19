@@ -2,13 +2,13 @@ import { StyleSheet, Text, View, FlatList } from 'react-native'
 import categories from '../utils/data/categories.json'
 import CardCategory from './CardCategory'
 
-const Categories = ({selectedCategoryState}) => {
+const Categories = ({navigation}) => {
   return (
 
         <FlatList
         data= {categories}
         keyExtractor= {item => item.id}
-        renderItem= {({item}) => <CardCategory item={item} selectedCategoryState={selectedCategoryState} />}
+        renderItem= {({item}) => <CardCategory item={item} navigation={navigation} />}
        /> 
     
   )

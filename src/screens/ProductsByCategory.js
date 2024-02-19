@@ -5,8 +5,9 @@ import { useEffect, useState } from 'react'
 import ProductByCategory from '../components/ProductByCategory'
 import Search from '../components/Search'
 
-const ProductsByCategory = ({categorySelected}) => {
+const ProductsByCategory = ({route, navigation}) => {
 
+    const {categorySelected} = route.params
     const [productsFiltered, setProductsFiltered] = useState([])
     const [Keyword, setKeyword] = useState("")
 
@@ -24,12 +25,12 @@ const ProductsByCategory = ({categorySelected}) => {
 
   return (
     <>
-    <Header title={categorySelected}/>
+   
     <Search handlerKeyword={handlerKeyword} />
     <FlatList
         data={productsFiltered}
         keyExtractor={item => item.id}
-        renderItem={({item})=> <ProductByCategory item={item} />}
+        renderItem={({item})=> <ProductByCategory  navigation={navigation} item={item} />}
       />
     </>
   )

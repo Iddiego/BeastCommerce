@@ -4,9 +4,9 @@ import colors from '../utils/global/colors'
 
 
 
-const CardCategory = ({item, selectedCategoryState}) => {
+const CardCategory = ({item, navigation}) => {
   return (
-    <Pressable onPress={()=>selectedCategoryState(item)}>
+    <Pressable onPress={()=>navigation.navigate("ProductsByCategory", {categorySelected:item})}>
       <ShadowBasic style={styles.container}>
         <Text style={styles.text}>{item}</Text>
       </ShadowBasic>

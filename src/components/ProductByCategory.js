@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import colors from '../utils/global/colors'
 
 
-const ProductByCategory = ({item}) => {
+const ProductByCategory = ({item, navigation}) => {
   return (
-    <View style={styles.container} >
+    <Pressable onPress={()=>navigation.navigate("ProductsDetail",{productId:item.id})} style={styles.container} >
         <Image style={styles.image} source={{uri:item.thumbnail}} resizeMode='cover' />
         <Text style={styles.text} >{item.id}. {item.title}</Text>
-    </View>
+    </Pressable>
   )
 }
 
@@ -34,8 +34,10 @@ const styles = StyleSheet.create({
         flexWrap:"wrap"
     },
     image: {
-        width:90,
-        height:90,
+        width:"30%",
+        height:"30%",
+        minWidth:90,
+        minHeight:90,
         borderRadius:55
     }
 

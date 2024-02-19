@@ -1,16 +1,15 @@
-import { FlatList, StyleSheet, Text, View } from 'react-native'
+import {  StyleSheet, Text, View } from 'react-native'
 import Header from '../components/Header'
 import Categories from '../components/Categories'
 
 
 
-const Home = ({selectedCategoryState}) => {
+const Home = ({navigation}) => {
 
   return (
-    <View>
-       <Header title='BeastMode'/>
-       <Categories selectedCategoryState={selectedCategoryState}  />
-    </View>
+    <>
+       <Categories navigation={navigation} />
+    </>
   )
 }
 
