@@ -1,8 +1,10 @@
 import { StatusBar } from 'expo-status-bar'
 import { useFonts } from 'expo-font'
 import { fontColletcion } from './src/utils/global/fonts'
-import colors from './src/utils/global/colors'
 import Navigator from './src/navigation/Navigator'
+import colors from './src/utils/global/colors'
+import { store } from './src/app/store'
+import { Provider } from 'react-redux'
 
 
 
@@ -18,7 +20,9 @@ const App = () => {
   return (
     <>
     <StatusBar backgroundColor={colors.magenta} />
-    <Navigator/>
+    <Provider store={store}>
+      <Navigator/>
+    </Provider>
    </>
 
   )
