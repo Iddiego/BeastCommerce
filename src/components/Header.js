@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
         width:"100%",
         justifyContent:"center",
         alignItems:"center",
-        position:"relative"
+        position:"relative",
+        color:"white"
     },
     text:{
         marginTop:40,
