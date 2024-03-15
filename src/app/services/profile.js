@@ -13,11 +13,26 @@ export const profileApi = createApi({
         }),
         getImage: builder.query({
             query:(localId) => `/profile/${localId}.json`
+        }),
+        putUserLocation: builder.mutation({
+            query: ({localId, locarionFormatted})=> (
+                {url:`/useLocation/${localId}.json`,
+                method: "PUT",
+                body:locarionFormatted
+            })
+        }),
+
+        getUserlocation:builder.query({
+            query:(localId) => `/useLocation/${localId}.json`
         })
     })
   })
 
-  export const {usePutImageMutation, useGetImageQuery} = profileApi
+  export const { usePutImageMutation,
+                 useGetImageQuery, 
+                 usePutUserLocationMutation,
+                useGetUserlocationQuery
+            } = profileApi
 
 
 

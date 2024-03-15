@@ -14,25 +14,26 @@ const ImageSelector = ({navigation}) => {
     const localId = useSelector((state) =>state.auth.localId)
     const {data,isSuccess} = useGetImageQuery(localId)
 
+
     useEffect(()=> {
         if(isSuccess && data) setImage(data.image)
     },[isSuccess,data])
 
     const pickImage = async () => {
 
-        const { granted } = await ImagePicker.requestCameraPermissionsAsync()
-       
+        const {granted} = await ImagePicker.requestCameraPermissionsAsync()
+         
         if(granted){
-            let result = await ImagePicker.launchCameraAsync({
-                allowsEditing:true,
-                aspect:[6,4],
-                quality:0.3,
-                base64:true
-
-            })
-            if(!result.canceled){
-                setImage('data:image/jpeg;base64,'+result.assets[0].base64)
-            }
+          let result = await ImagePicker.launchCameraAsync({
+             allowsEditing:true,
+             aspect:[6,4],
+             quality:0.3,
+             base64:true
+          })
+ 
+          if(!result.canceled){
+             setImage('data:image/jpeg;base64,' + result.assets[0].base64)
+          }
         }
 
 
@@ -71,6 +72,6 @@ const styles = StyleSheet.create({
     image:{
         width:200,
         height:200,
-        borderRadius:50
+        borderRadius:100
     }
 })

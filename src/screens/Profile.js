@@ -1,24 +1,27 @@
-import { StyleSheet, View, Image } from 'react-native'
+import { StyleSheet, View, Image, Text} from 'react-native'
 import AddButton from '../components/AddButton'
 import { useSelector } from 'react-redux'
-import { useGetImageQuery } from '../app/services/profile'
+import { useGetImageQuery} from '../app/services/profile'
+import { useGetUserlocationQuery } from '../app/services/profile'
+import colors from '../utils/global/colors'
 
 
 const Profile = ({navigation}) => {
     const localId = useSelector((state)=> state.auth.localId)
+    const {data:locationFormatted} = useGetUserlocationQuery(localId)
     const {data} = useGetImageQuery(localId)
-
   return (
-    <View style={styles.container} >
+    <View style={styles.container}>
         <Image
-        source={data ? {uri:data.image}:require("../../assets/Logo.png")}
-        style={styles.image}
-        resizeMode='contain'
+            source={data ? {uri:data.image}:require("../../assets/Logo.png")}
+            style={styles.image}
+            resizeMode='contain'
         />
-        <AddButton title={"Su Fotico Parce"} onPress={()=> navigation.navigate("ImageSelector")} />
+        <Text style={styles.text}>{locationFormatted.address}</Text>
+        <AddButton title={"Fotico Parce"} onPress={()=> navigation.navigate("ImageSelector")}/>
+        <AddButton title={"¿Direcciòn mi pana?"} onPress={()=> navigation.navigate("LocationSelector")}/>
     </View>
-  )
-}
+  )}
 
 export default Profile
 
@@ -34,6 +37,7 @@ const styles = StyleSheet.create({
     },
     text:{
         fontSize:16,
-        marginVertical:10
+        marginVertical:10,
+        color: colors.green
     }
 })
