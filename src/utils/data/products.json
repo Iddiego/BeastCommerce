@@ -1,7 +1,7 @@
 [
   {
-    "id": 0,
-    "title": "Set de Discos Bumper - 250 lbs",
+    "id": 4,
+    "title": "Set de Discos - lbs",
     "description": "Discos bumper de alta calidad para levantamiento olímpico de pesas.",
     "price": 499,
     "discountPercentage": 12,
@@ -9,17 +9,16 @@
     "stock": 20,
     "brand": "StrengthX",
     "category": "Pesos Libres",
-    "thumbnail": "https://i.dummyjson.com/data/products/105/thumbnail.jpg",
+    "thumbnail": "https://i.ibb.co/jfck8xX/discos.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/105/1.jpg",
-      "https://i.dummyjson.com/data/products/105/2.jpg",
-      "https://i.dummyjson.com/data/products/105/3.jpg",
-      "https://i.dummyjson.com/data/products/105/thumbnail.jpg"
+              "https://i.ibb.co/jfck8xX/discos.jpg",
+              "https://i.ibb.co/nrz5c6V/DISCOS-COLOR-A-min.jpg",
+              "https://i.ibb.co/bN1jDZg/discos-fraccionales-e1555620473464.jpg"
     ]
   },
   {
     "id": 1,
-    "title": "Rack de Potencia Pro 5000",
+    "title": "Rack de Potencia Pro ",
     "description": "Rack de potencia resistente para sentadillas, presses de banca y dominadas.",
     "price": 899,
     "discountPercentage": 15,
@@ -27,17 +26,17 @@
     "stock": 8,
     "brand": "MuscleMaster",
     "category": "Racks",
-    "thumbnail": "https://i.dummyjson.com/data/products/103/thumbnail.jpg",
+    "thumbnail": "https://i.ibb.co/d63pb5B/Quarter-Rack-7-R16.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/103/1.jpg",
-      "https://i.dummyjson.com/data/products/103/2.jpg",
-      "https://i.dummyjson.com/data/products/103/3.jpg",
-      "https://i.dummyjson.com/data/products/103/thumbnail.jpg"
+              "https://i.ibb.co/wchv3qp/george-pagan-iii-5-Kfpn0m0-OB4-unsplash.jpg",
+              "https://i.ibb.co/qNjy9G4/rack1.jpg",
+              "https://i.ibb.co/d63pb5B/Quarter-Rack-7-R16.jpg"
+
     ]
   },
   {
     "id": 2,
-    "title": "Set de Mancuernas Ajustables - 50 lbs",
+    "title": "Set de Mancuernas - lbs",
     "description": "Set de mancuernas ajustables para entrenamiento de fuerza versátil.",
     "price": 249,
     "discountPercentage": 8,
@@ -45,17 +44,16 @@
     "stock": 15,
     "brand": "FlexFit",
     "category": "Mancuernas",
-    "thumbnail": "https://i.dummyjson.com/data/products/104/thumbnail.jpg",
+    "thumbnail": "https://i.ibb.co/cLB3pwv/9-U6-A7799-1-1-1-edited-2048x1280.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/104/1.jpg",
-      "https://i.dummyjson.com/data/products/104/2.jpg",
-      "https://i.dummyjson.com/data/products/104/3.jpg",
-      "https://i.dummyjson.com/data/products/104/thumbnail.jpg"
+      "https://i.ibb.co/6BRvcTB/6786fab3b8588813b5f4acaeeeb40b8a46e8a9db-Weight-Training-Equipment-438393-01.jpg",
+      "https://i.ibb.co/y6GPsx7/hex-dumbbell-mancuernas-hexagonales-c-png.jpg",
+      "https://i.ibb.co/cLB3pwv/9-U6-A7799-1-1-1-edited-2048x1280.jpg"
     ]
   },
   {
     "id": 3,
-    "title": "Trotadora Pro XL 2000",
+    "title": "Trotadora Pro",
     "description": "Trotadora profesional con características avanzadas para entrenamientos intensos.",
     "price": 1499,
     "discountPercentage": 10,
@@ -65,12 +63,15 @@
     "category": "Trotadoras",
     "thumbnail": "https://i.ibb.co/CVF0sFw/8b34f1ada5525f7a6519e2e3ef8c2489.jpg",
     "images": [
-      "https://i.ibb.co/wgQWxv0/movifit.jpg"
+             "https://i.ibb.co/wgQWxv0/movifit.jpg",
+             "https://i.ibb.co/CVF0sFw/8b34f1ada5525f7a6519e2e3ef8c2489.jpg",
+             "https://i.ibb.co/8XbjBD1/trotadora-caminadora-x9i-pantalla-touch-interactiva-movifit.webp"
+
     ]
   },
   {
-    "id": 4,
-    "title": "Juego de Pesas Olímpicas - 300 lbs",
+    "id": 0,
+    "title": "Barras Olimpicas",
     "description": "Juego completo de discos olímpicos para levantamiento de pesas profesional.",
     "price": 699,
     "discountPercentage": 5,
@@ -78,12 +79,11 @@
     "stock": 10,
     "brand": "IronForge",
     "category": "Discos",
-    "thumbnail": "https://i.dummyjson.com/data/products/102/thumbnail.jpg",
+    "thumbnail": "https://i.ibb.co/KjBV7wP/image-2019-03-12.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/102/1.jpg",
-      "https://i.dummyjson.com/data/products/102/2.jpg",
-      "https://i.dummyjson.com/data/products/102/3.jpg",
-      "https://i.dummyjson.com/data/products/102/thumbnail.jpg"
+      "https://i.ibb.co/PrBrfPz/70374.jpg",
+      "https://i.ibb.co/QdQpKpK/images.jpg",
+      "https://i.ibb.co/KjBV7wP/image-2019-03-12.jpg"
     ]
   }
 

@@ -18,12 +18,7 @@ export default CardCategory
 
 const styles = StyleSheet.create({
   container:{
-    width:150,
-    height:100,
-    backgroundColor:colors.green2,
-    marginHorizontal:10,
-    marginVertical:10,
-    borderRadius:5,
+    width:"100%",
     overflow:"hidden"
 },
 background:{
@@ -34,7 +29,7 @@ background:{
   justifyContent:"center"
 },
 text:{
-    fontSize:16,
+    fontSize:18,
     color:"white",
     fontWeight:"500"
 }

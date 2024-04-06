@@ -17,16 +17,19 @@ App de comercio electrónico desarrollada con ReacT Native
 ## Categorías
 - Muestra las distintas categorías de productos
 - Con un click permite el ingreso a las categorias de los productos para navegar
+<img src="./assets/imgapp/Categorias.jpeg" width="200">
 
 ## Productos
 - Lista todos los productos en tarjetas con nombre y foto.
 - Tiene un buscador para filtar los productos
 - Premite navegar con un click a los productos 
+<img src="./assets/imgapp/Producto.jpeg" width="200">
 
 ## Detalles del Producto
 - Proporciona una descripción detallada del producto.
 - Muestra el precio y el stock disponible.
 - Permite agregar el producto al carrito.
+<img src="./assets/imgapp/Detalle.jpeg" width="200">
 
 ## Tecnologías Utilizadas
 

@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     justifyContent: "center"
 },
 horizontal: {
-    flexDirection: "row",
+    flexDirection: "column",
     justifyContent: "space-around",
     padding: 10
 }
