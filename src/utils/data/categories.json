@@ -1,22 +1,22 @@
 [
-    "smartphones",
-    "laptops",
-    "fragrances",
-    "skincare",
-    "groceries",
-    "home-decoration",
-    "furniture",
-    "tops",
-    "womens-dresses",
-    "womens-shoes",
-    "mens-shirts",
-    "mens-shoes",
-    "mens-watches",
-    "womens-watches",
-    "womens-bags",
-    "womens-jewellery",
-    "sunglasses",
-    "automotive",
-    "motorcycle",
-    "lighting"
-  ]
+  {
+    "title":"Pesos Libres",
+    "thumbnail":"https://i.ibb.co/HzdB9Xf/images.jpg"
+  },
+  {
+    "title":"Racks",
+    "thumbnail":"https://i.ibb.co/9WQ80TZ/Power-Station-T4-2.jpg"
+  },
+  {
+    "title":"Mancuernas",
+    "thumbnail":"https://i.ibb.co/LPVkRKK/dumbell-black-detalle-peso-500x500.jpg"
+  },
+  {
+    "title":"Trotadoras",
+    "thumbnail":"https://i.ibb.co/CVF0sFw/8b34f1ada5525f7a6519e2e3ef8c2489.jpg"
+  },
+    {
+    "title":"Discos",
+    "thumbnail":"https://i.ibb.co/YBGqSSY/a38d4fed12625b4ebcaec044689f1c2d.jpg"
+  }
+]

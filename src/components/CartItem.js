@@ -2,9 +2,10 @@ import { Pressable, StyleSheet, Text, View } from 'react-native'
 import {AntDesign} from '@expo/vector-icons'
 import colors from '../utils/global/colors'
 import { useDispatch } from 'react-redux'
-import { addCartItem, deleteCartItem } from '../features/cart/cartSlice'
+import { addCartItem,  } from '../features/cart/cartSlice'
 import Counter from './Counter'
 import CounterCart from './CounterCart'
+import { deleteCartItem } from '../features/cart/cartSlice'
 
 
 const CartItem = ({item}) => {

@@ -5,11 +5,9 @@ import Navigator from './src/navigation/Navigator'
 import colors from './src/utils/global/colors'
 import { store } from './src/app/store'
 import { Provider } from 'react-redux'
+import { init } from './src/utils/db'
 
-
-
-
-
+init()
 
 const App = () => {
   const [fontsLoader] = useFonts (fontColletcion)

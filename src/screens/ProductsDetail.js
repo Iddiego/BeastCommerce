@@ -1,37 +1,45 @@
 import { Pressable, StyleSheet, Text, View, Image } from 'react-native'
-import { useEffect, useState } from 'react'
 import colors from '../utils/global/colors'
 import Counter from '../components/Counter'
 import { useGetProductQuery } from '../app/services/shop'
+import { useDispatch } from 'react-redux'
+import LoadingSpinner from '../components/LoadingSpinner'
+import Error from '../components/Error'
+import EmptyListComponent from '../components/EmptyListComponent'
+import { addCartItem } from '../features/cart/cartSlice'
 
 
 
-const ProductsDetail = ({route}) => {
-  
+const ProductsDetail = ({route, navigation}) => {
+  const dispatch = useDispatch()
+
   const {productId} = route.params
-  const {data:product, isLoading} = useGetProductQuery(productId)
+  const {data:product, isLoading, isError, isSuccess} = useGetProductQuery(productId)
 
-  if (isLoading) return null
+
+
+  if(isLoading) return <LoadingSpinner/>
+  if(isError) return <Error message="¡La embarro parcero!" textButtton="Recargar" onRetry={()=>navigation.goBack()} />
+  if(isSuccess && product === null) return <EmptyListComponent message="No hay productos parcero"/>
 
 
   return (
     <View style={styles.container}>
-      <View style={styles.content}>
+    <View style={styles.content} >
         <Image
           style={styles.image}
-          source={{uri:product?.images ? product.images[0]: null}}
+          source={{uri:product?.images ? product.images[0] : null}}
           resizeMode='cover'
         />
         <View style={styles.containerText}>
           <Text style={styles.title}>{product.title}</Text>
-          <Text>{product.description}</Text>
+          <Text>{product?.description}</Text>
         </View>
-        <View style={styles.containerPrice}>
-          <Text style={styles.price}>$ {product.price}</Text>
-          <Counter
-          initialValue={1}
-          product={product} 
-          textButton="Add"/>
+        <View style={styles.containerPrice }>
+          <Text style={styles.price}>$ {product?.price}</Text>
+          <Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product))}>
+            <Text style={styles.buyNowText}>Carrito</Text>
+          </Pressable>
         </View>
       </View>
     </View>

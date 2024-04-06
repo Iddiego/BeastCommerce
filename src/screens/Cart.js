@@ -20,7 +20,7 @@ const Cart = ({navigation}) => {
       ...cart
     }
      await triggerAddOrder({localId,order})
-     dispatch(deleteCart)
+     dispatch(deleteCart ())
      navigation.navigate("OrdersStack")
    }
    

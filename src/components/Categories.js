@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StyleSheet, FlatList } from 'react-native'
 import { useGetCategoriesQuery } from '../app/services/shop'
 import CardCategory from './CardCategory'
 
@@ -9,8 +9,9 @@ const Categories = ({navigation}) => {
   return (
         <FlatList
         data= {categories}
-        keyExtractor= {item => item}
+        keyExtractor= {item => item.title}
         renderItem= {({item}) => <CardCategory item={item} navigation={navigation} />}
+
        /> 
     
   )

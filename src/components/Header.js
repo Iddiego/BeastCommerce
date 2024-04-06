@@ -1,9 +1,20 @@
 import { View, Text, StyleSheet, Pressable } from "react-native";
 import colors from "../utils/global/colors";
 import {Ionicons} from "@expo/vector-icons"
+import { useDispatch, useSelector } from "react-redux";
+import { clearUser } from "../features/auth/authSlice";
+import { deleteSession } from "../utils/db";
  
 
 const Header =({title="BeastMode", navigation}) => {
+   
+    const dispatch = useDispatch()
+    const idToken = useSelector((state) => state.auth.idToken)
+
+    const onLogout = () => {
+        dispatch(clearUser())
+        deleteSession()
+    }
 
     return <View style={styles.container}>
                 {navigation.canGoBack() &&
@@ -12,6 +23,13 @@ const Header =({title="BeastMode", navigation}) => {
                 </Pressable>
                 }
                 <Text style={styles.text}>{title}</Text>
+                {idToken && (
+                    <Pressable style={styles.logoutIcon} onPress={onLogout} >
+                        <Ionicons name="chevron-back" size={24} color="#FF3985" />
+                    </Pressable>
+                )
+
+                }
            </View>
 }
 
@@ -38,5 +56,10 @@ const styles = StyleSheet.create({
         top:50,
         left:10,
         backgroundColorcolor:"white"
+    },
+    logoutIcon:{
+        position:"absolute",
+        right:10,
+        bottom:15
     }
 })

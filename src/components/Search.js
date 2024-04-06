@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
 
     errorText: {
         color:"white",
-        fontSize:20
+        fontSize:20,
     },
 
     containerdos:{

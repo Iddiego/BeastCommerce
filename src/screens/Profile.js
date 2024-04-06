@@ -17,7 +17,7 @@ const Profile = ({navigation}) => {
             style={styles.image}
             resizeMode='contain'
         />
-        <Text style={styles.text}>{locationFormatted.address}</Text>
+        <Text style={styles.text}>{locationFormatted?.address}</Text>
         <AddButton title={"Fotico Parce"} onPress={()=> navigation.navigate("ImageSelector")}/>
         <AddButton title={"¿Direcciòn mi pana?"} onPress={()=> navigation.navigate("LocationSelector")}/>
     </View>
